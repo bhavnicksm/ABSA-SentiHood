@@ -2,6 +2,20 @@
 
 This repository was made as a submission for IIIT Delhi MIDAS lab task. 
 
+ToDo List of Experiments:
+
+- [x] bert-base NLI-M task  
+- [x] roberta-base NLI-M task
+- [] bert-large NLI-M task (currently running)
+- [] roberta-large NLI-M task (currently running)
+- [] electra-base NLI-M task
+- [] bert-base NLI-B task  
+- [] roberta-base NLI-B task
+- [] bert-large NLI-B task 
+- [] roberta-large NLI-B task 
+- [] electra-base NLI-B task
+
+
 ## About the Dataset
 
 The dataset is found under the data section of the repository and contains the following files:
