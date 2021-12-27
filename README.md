@@ -54,7 +54,7 @@ Since the use of proper GPUs for training of LLMs is necessary, the code was ent
 
 The submissions for each model are contained in the submissions folder. Each submission is a `.jsonl` file having 1491 examples (in dictionaries) with the following structure.
 
-```json
+```python
 [
     {
         'id': 61,
