@@ -55,6 +55,9 @@ TrainingArguments(output_dir = f"/content/drive/MyDrive/SentiHood/models/{model_
 | roberta-base | NLI-M | 0.9830371115582384 | 0.8531581122933095 | 0.8630080220007996 | 0.8578191613396783 |
 
 
+The final model chosen for submission is: *** roberta-base ***
+
+
 ## Submission
 
 Since the use of proper GPUs for training of LLMs is necessary, the code was entirely written and executed in Google Colab Notebooks. Said notebooks can be found under the notebooks folder. 
