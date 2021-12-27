@@ -66,7 +66,7 @@ The submissions for each model are contained in the submissions folder. Each sub
                'sentiment': 'Positive',
                'target_entity': 'LOCATION1'}]
     }
-]
+...
 ```
 
 
