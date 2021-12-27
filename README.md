@@ -48,6 +48,8 @@ TrainingArguments(output_dir = f"/content/drive/MyDrive/SentiHood/models/{model_
 
 ## Code
 
+Since the use of proper GPUs for training of LLMs is necessary, the code was entirely written and executed in Google Colab Notebooks. Said notebooks can be found under the notebooks folder. 
+
 
 ## References
 
