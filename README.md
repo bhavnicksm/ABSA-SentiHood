@@ -62,7 +62,7 @@ The submissions for each model are contained in the submissions folder. Each sub
                'sentiment': 'Positive',
                'target_entity': 'LOCATION1'}],
         'text': 'I really like LOCATION1  I lived there for 3 months and had a lot of fun',
-        'model-pred': [{'aspect': 'live',
+        'model_pred': [{'aspect': 'live',
                'sentiment': 'Positive',
                'target_entity': 'LOCATION1'}]
     }
