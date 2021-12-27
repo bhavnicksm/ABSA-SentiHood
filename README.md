@@ -20,10 +20,34 @@ The approach taken here was completely based on [1]; the approach essentially fr
 
 ## Experiments
 
+The models were trained with the following HF Trainer Arguments on a Google Colab Notebook (present in the notebooks folder):
+
+```python
+TrainingArguments(output_dir = f"/content/drive/MyDrive/SentiHood/models/{model_name}",
+                  overwrite_output_dir = True,
+                  num_train_epochs = 5,
+                  evaluation_strategy="steps",
+                  eval_steps=500,
+                  logging_steps=500, 
+                  per_device_train_batch_size = 8,
+                  per_device_eval_batch_size = 8,
+                  learning_rate = 5e-6,
+                  warmup_ratio = 0.1,
+                  weight_decay = 0.01,
+                  save_strategy = 'epoch',
+                  seed = 42,
+                  )
+
+```
+
 | Model Name | Test-Accuracy | Test-Recall | Test-Precision | Test-F1 |
 | --- | --- | --- | --- | --- |
 | bert-base-uncased | 0.9822546389447798 | 0.8411322714846929 | 0.8733654497362174 | 0.8567007821344529 |
 | roberta-base | 0.9830371115582384 | 0.8531581122933095 | 0.8630080220007996 | 0.8578191613396783 |
+
+
+## Code
+
 
 ## References
 
