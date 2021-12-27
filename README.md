@@ -40,7 +40,7 @@ TrainingArguments(output_dir = f"/content/drive/MyDrive/SentiHood/models/{model_
                   logging_steps=500, 
                   per_device_train_batch_size = 8,
                   per_device_eval_batch_size = 8,
-                  learning_rate = 5e-6,
+                  learning_rate = 5e-5,
                   warmup_ratio = 0.1,
                   weight_decay = 0.01,
                   save_strategy = 'epoch',
@@ -55,7 +55,7 @@ TrainingArguments(output_dir = f"/content/drive/MyDrive/SentiHood/models/{model_
 | roberta-base | NLI-M | 0.9830371115582384 | 0.8531581122933095 | 0.8630080220007996 | 0.8578191613396783 |
 
 
-The final model chosen for submission is: *** roberta-base ***
+The final model chosen for submission is: **roberta-base**
 
 
 ## Submission
@@ -84,6 +84,7 @@ The submissions for each model are contained in the submissions folder. Each sub
 
 [1] [Utilizing BERT for Aspect-Based Sentiment Analysis
 via Constructing Auxiliary Sentence](https://aclanthology.org/N19-1035.pdf)
+
 [2] [HuggingFace Trainer](https://huggingface.co/docs/transformers/main_classes/trainer#trainer)
 
 
