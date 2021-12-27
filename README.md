@@ -67,9 +67,10 @@ TrainingArguments(output_dir = f"/content/drive/MyDrive/SentiHood/models/{model_
 | --- | --- | --- | --- | --- | --- |
 | bert-base-uncased | NLI-M | 0.9822546389447798 | 0.8411322714846929 | 0.8733654497362174 | 0.8567007821344529 |
 | roberta-base | NLI-M | 0.9830371115582384 | 0.8531581122933095 | 0.8630080220007996 | 0.8578191613396783 |
+|roberta-large (early-stopped;3 epochs)|NLI-M|0.9854124748490946|0.8731161037160114|0.8963398897511478|0.884449301687399|
 
 
-The final model chosen for submission is: **roberta-base**
+The final model chosen for submission is: **roberta-large**
 
 
 ## Submission
