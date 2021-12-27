@@ -96,10 +96,14 @@ The submissions for each model are contained in the submissions folder. Each sub
 
 ## References
 
-[1] [Utilizing BERT for Aspect-Based Sentiment Analysis
-via Constructing Auxiliary Sentence](https://aclanthology.org/N19-1035.pdf)
+[1] [Utilizing BERT for Aspect-Based Sentiment Analysis via Constructing Auxiliary Sentence](https://aclanthology.org/N19-1035.pdf)
 
 [2] [HuggingFace Trainer](https://huggingface.co/docs/transformers/main_classes/trainer#trainer)
+
+[3] [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
+
+[4] [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692)
+
 
 
 ## License
