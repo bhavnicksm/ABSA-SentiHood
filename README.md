@@ -14,9 +14,11 @@ The dataset is found under the data section of the repository and contains the f
     +-- sentihood-test.json
 ```
 
+The files contain 
+
 
 ## Approach
-The approach taken here was completely based on [1]; the approach essentially frames the aspect-based sentiment analysis (ABSA) question as either a QA task or a NLI task. Given the constraints of time and efficiency, NLI task was chosen as the main focus of this approach, specifically NLI-M task (which stands for NLI multi-label classification)
+The approach taken here was completely based on [1](#references); the approach essentially frames the aspect-based sentiment analysis (ABSA) question as either a QA task or a NLI task. Given the constraints of time and efficiency, NLI task was chosen as the main focus of this approach, specifically NLI-M task (which stands for NLI multi-label classification)
 
 ## Experiments
 
@@ -40,15 +42,32 @@ TrainingArguments(output_dir = f"/content/drive/MyDrive/SentiHood/models/{model_
 
 ```
 
-| Model Name | Test-Accuracy | Test-Recall | Test-Precision | Test-F1 |
-| --- | --- | --- | --- | --- |
-| bert-base-uncased | 0.9822546389447798 | 0.8411322714846929 | 0.8733654497362174 | 0.8567007821344529 |
-| roberta-base | 0.9830371115582384 | 0.8531581122933095 | 0.8630080220007996 | 0.8578191613396783 |
+| Model Name |Task Type| Test-Accuracy | Test-Recall | Test-Precision | Test-F1 |
+| --- | --- | --- | --- | --- | --- |
+| bert-base-uncased | NLI-M | 0.9822546389447798 | 0.8411322714846929 | 0.8733654497362174 | 0.8567007821344529 |
+| roberta-base | NLI-M | 0.9830371115582384 | 0.8531581122933095 | 0.8630080220007996 | 0.8578191613396783 |
 
 
-## Code
+## Submission
 
 Since the use of proper GPUs for training of LLMs is necessary, the code was entirely written and executed in Google Colab Notebooks. Said notebooks can be found under the notebooks folder. 
+
+The submissions for each model are contained in the submissions folder. Each submission is a `.jsonl` file having 1491 examples (in dictionaries) with the following structure.
+
+```jsonl
+[
+    {
+        'id': 61,
+        'opinions': [{'aspect': 'live',
+               'sentiment': 'Positive',
+               'target_entity': 'LOCATION1'}],
+        'text': 'I really like LOCATION1  I lived there for 3 months and had a lot of fun',
+        'model-pred': [{'aspect': 'live',
+               'sentiment': 'Positive',
+               'target_entity': 'LOCATION1'}]
+    }
+]
+```
 
 
 ## References
