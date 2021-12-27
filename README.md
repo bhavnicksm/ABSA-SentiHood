@@ -33,9 +33,9 @@ The files contain the following number of examples:
 
 | file | Examples |
 | --- | --- |
-| Train | |
-| Dev |  |
-| Test | | 
+| Train | 2977 |
+| Dev | 747 |
+| Test | 1491 | 
 
 
 ## Approach
