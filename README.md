@@ -14,7 +14,14 @@ The dataset is found under the data section of the repository and contains the f
     +-- sentihood-test.json
 ```
 
-The files contain 
+The files contain the following number of examples: 
+
+
+| file | Examples |
+| --- | --- |
+| Train | |
+| Dev |  |
+| Test | | 
 
 
 ## Approach
@@ -22,7 +29,7 @@ The approach taken here was completely based on [1](#references); the approach e
 
 ## Experiments
 
-The models were trained with the following HF Trainer Arguments on a Google Colab Notebook (present in the notebooks folder):
+The models were trained with the following HF Trainer Arguments on a Google Colab Notebook (present in the notebooks folder). Note that, by default HFTrainer uses the `AdamW` optimizer. 
 
 ```python
 TrainingArguments(output_dir = f"/content/drive/MyDrive/SentiHood/models/{model_name}",
@@ -74,6 +81,7 @@ The submissions for each model are contained in the submissions folder. Each sub
 
 [1] [Utilizing BERT for Aspect-Based Sentiment Analysis
 via Constructing Auxiliary Sentence](https://aclanthology.org/N19-1035.pdf)
+[2] [HuggingFace Trainer](https://huggingface.co/docs/transformers/main_classes/trainer#trainer)
 
 
 ## License
